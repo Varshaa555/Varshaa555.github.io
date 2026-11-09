@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Varsha Shiva Kumar · Finance Portfolio</title>
+<meta name="description" content="Varsha Shiva Kumar: Corporate Finance MBA candidate. FP&A, treasury and valuation modeling projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#faf8f4; --surface:#ffffff; --text:#0b1f3a; --muted:#56607a;
+  --border:#e6e1d7; --accent:#0f6e5c; --accent-soft:#e3f1ec; --pos:#0f6e5c; --neg:#b4372b;
+  --navy:#0b1f3a; --on-navy:#ffffff; --gold:#a8741a; --gold-bright:#d4a24c;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0a1424; --surface:#111e33; --text:#eef1f6; --muted:#9ba7bd;
+    --border:#22324d; --accent:#4fc7a5; --accent-soft:#12322f; --pos:#4fc7a5; --neg:#ff8f80;
+    --navy:#06101e; --on-navy:#eef1f6; --gold:#e0b45e; --gold-bright:#e0b45e;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0a1424; --surface:#111e33; --text:#eef1f6; --muted:#9ba7bd;
+    --border:#22324d; --accent:#4fc7a5; --accent-soft:#12322f; --pos:#4fc7a5; --neg:#ff8f80;
+    --navy:#06101e; --on-navy:#eef1f6; --gold:#e0b45e; --gold-bright:#e0b45e;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+header{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+nav{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-weight:700;color:var(--text)}
+.links{display:flex;gap:22px;font-size:15px}
+.links a{color:var(--muted)}
+.links a:hover{color:var(--text);text-decoration:none}
+section{padding:84px 0;border-bottom:1px solid var(--border)}
+.hero{padding:112px 0 88px}
+.eyebrow{color:var(--accent);font-weight:600;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+h1{font-family:"Source Serif 4",Georgia,serif;font-weight:600;font-size:clamp(2.3rem,6vw,3.8rem);line-height:1.08;margin:14px 0 22px;letter-spacing:-.015em}
+h2{font-family:"Source Serif 4",Georgia,serif;font-weight:600;font-size:2rem;margin-bottom:10px}
+.sub{color:var(--muted);margin-bottom:36px;max-width:640px}
+h3{font-size:1.15rem;line-height:1.35;margin-bottom:4px}
+.lead{font-size:1.15rem;color:var(--muted);max-width:640px}
+.btns{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap}
+.btn{display:inline-block;padding:11px 20px;border-radius:8px;font-weight:600;font-size:15px;border:1px solid var(--border);color:var(--text);background:var(--surface)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn:hover{text-decoration:none;opacity:.9}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-top:56px}
+.stat{background:var(--surface);padding:18px 20px}
+.stat b{display:block;font-size:1.5rem;font-variant-numeric:tabular-nums}
+.stat span{font-size:13px;color:var(--muted)}
+.about{display:grid;grid-template-columns:1.3fr 1fr;gap:48px}
+.about p{color:var(--muted);margin-bottom:14px}
+.skillgroup{margin-bottom:18px}
+.skillgroup h4{font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:8px;font-weight:600}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:13px;padding:3px 10px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-weight:500}
+.project{display:grid;grid-template-columns:1.05fr 1fr;gap:40px;align-items:center;padding:36px 0;border-top:1px solid var(--border)}
+.project:first-of-type{border-top:none;padding-top:0}
+.project:nth-of-type(even) .visual{order:2}
+.visual{border:1px solid var(--border);border-radius:14px;overflow:hidden;background:var(--surface);box-shadow:0 1px 2px rgba(0,0,0,.04),0 8px 24px rgba(20,33,61,.06)}
+.visual img{display:block;width:100%;height:auto}
+.kicker{font-size:13px;color:var(--accent);font-weight:600;margin-bottom:6px}
+.project ul{margin:14px 0 16px 18px;color:var(--muted);font-size:15px}
+.project li{margin-bottom:6px}
+.plinks{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:14px;font-weight:600;margin-top:16px}
+.thumbs{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding:6px;border-top:1px solid var(--border)}
+.thumbs a{display:block;border-radius:6px;overflow:hidden;border:1px solid var(--border)}
+.thumbs img{display:block;width:100%}
+/* metric panels for Excel models */
+.panel{padding:22px}
+.panel-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:16px;gap:12px}
+.panel-head b{font-size:14px}
+.panel-head span{font-size:12px;color:var(--muted)}
+.mgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.m{border:1px solid var(--border);border-radius:10px;padding:12px 14px}
+.m b{display:block;font-size:1.35rem;font-variant-numeric:tabular-nums;line-height:1.2}
+.m span{font-size:12px;color:var(--muted)}
+.neg{color:var(--neg)} .pos{color:var(--pos)}
+.chart{margin-top:14px}
+.chart svg{display:block;width:100%;height:auto}
+.minis{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;margin-top:44px}
+.mini{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:22px}
+.mini p{color:var(--muted);font-size:15px;margin-top:8px}
+.timeline{display:flex;flex-direction:column;gap:32px}
+.job{display:grid;grid-template-columns:180px 1fr;gap:24px}
+.when{color:var(--muted);font-size:14px;padding-top:3px}
+.org{color:var(--muted);font-size:15px;margin-bottom:8px}
+.job ul{margin-left:18px;color:var(--muted);font-size:15px}
+.job li{margin-bottom:4px}
+.certs{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px;margin-top:40px}
+.cert{border:1px solid var(--border);border-radius:10px;padding:14px 16px;background:var(--surface);font-size:14px}
+.cert b{display:block;font-size:15px}
+.cert span{color:var(--muted)}
+.contact{text-align:center;border-bottom:none;background:var(--navy);color:var(--on-navy)}
+.contact h2{color:var(--on-navy)}
+.contact .lead{margin:0 auto;color:color-mix(in srgb,var(--on-navy) 75%,transparent)}
+.contact .btns{justify-content:center}
+.contact .btn{background:transparent;color:var(--on-navy);border-color:color-mix(in srgb,var(--on-navy) 35%,transparent)}
+.contact .btn.primary{background:#fff;color:#14213d;border-color:#fff}
+footer{padding:28px 0;text-align:center;color:var(--muted);font-size:14px}
+@media (max-width:800px){
+  .about,.project{grid-template-columns:1fr;gap:24px}
+  .project:nth-of-type(even) .visual{order:0}
+  .stats{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+  .links{gap:14px;font-size:14px}
+  .job{grid-template-columns:1fr;gap:2px}
+  section{padding:60px 0}
+  .hero{padding:64px 0 56px}
+}
+@media (max-width:420px){.links a:nth-child(3){display:none}}
+
+/* palette accents */
+.eyebrow,.kicker{color:var(--gold)}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.stats{border-top:3px solid var(--navy)}
+.stat b{color:var(--navy)}
+h2::after{content:"";display:block;width:44px;height:3px;background:var(--gold-bright);border-radius:2px;margin-top:12px}
+.contact h2::after{margin:12px auto 0}
+header .logo{color:var(--navy)}
+.btn.primary{box-shadow:0 6px 16px -6px color-mix(in srgb,var(--accent) 60%,transparent)}
+.contact .btn.primary{background:var(--gold-bright);border-color:var(--gold-bright);color:#0b1f3a;box-shadow:none}
+.visual{border-top:3px solid var(--accent)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .stat b,:root:not([data-theme="light"]) header .logo{color:var(--text)}}
+:root[data-theme="dark"] .btn.primary{color:#0a1424}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .btn.primary{color:#0a1424}}
+:root[data-theme="dark"] .stat b,:root[data-theme="dark"] header .logo{color:var(--text)}
+
+/* bold navy hero */
+header{background:#0b1f3a;border-bottom:1px solid rgba(255,255,255,.08)}
+header .logo,:root header .logo{color:#fff!important}
+.links a{color:rgba(255,255,255,.72)}
+.links a:hover{color:#fff}
+.hero{background:radial-gradient(1200px 500px at 85% -10%,rgba(46,196,160,.22),transparent 60%),radial-gradient(800px 400px at -10% 110%,rgba(212,162,76,.18),transparent 60%),linear-gradient(160deg,#0b1f3a 0%,#0f2a4d 100%);color:#fff;border-bottom:none}
+.hero .eyebrow{color:#e0b45e}
+.hero h1{color:#fff}
+.hero h1 em{color:#5fd4b0}
+.hero .lead{color:rgba(255,255,255,.78)}
+.hero .btn{background:transparent;color:#fff;border-color:rgba(255,255,255,.3)}
+.hero .btn.primary{background:#2ec4a0;border-color:#2ec4a0;color:#0b1f3a!important;box-shadow:0 10px 30px -10px rgba(46,196,160,.7)}
+.hero .stats{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.14);border-top:3px solid #e0b45e}
+.hero .stat{background:rgba(11,31,58,.55)}
+.hero .stat b{color:#fff!important}
+.hero .stat span{color:rgba(255,255,255,.7)}
+#work{background:var(--bg)}
+#about{background:var(--surface)}
+.project .visual{border-top:3px solid var(--accent)}
+
+/* theme */
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){--bg:#f7f5f0;--surface:#ffffff;--accent:#0c2340;--accent-soft:#f3ecdb;--navy:#071426;--gold:#7a5c17;--gold-bright:#c9a24a;--pos:#12805c}}
+:root[data-theme="light"]{--bg:#f7f5f0;--surface:#ffffff;--accent:#0c2340;--accent-soft:#f3ecdb;--navy:#071426;--gold:#7a5c17;--gold-bright:#c9a24a;--pos:#12805c}
+.tag{color:#7a5c17}
+header{background:#071426}
+.hero{background:radial-gradient(1100px 520px at 88% -10%,rgba(201,162,74,.20),transparent 60%),radial-gradient(800px 420px at -10% 110%,rgba(59,110,190,.25),transparent 60%),linear-gradient(160deg,#071426 0%,#0c2340 100%)}
+.hero .eyebrow{color:#c9a24a}
+.hero h1 em{color:#e3c27a}
+.hero .btn.primary,.btn.primary{background:#c9a24a;border-color:#c9a24a;color:#071426!important;box-shadow:0 10px 30px -12px #c9a24a}
+.hero .stats{border-top-color:#c9a24a}
+.contact{background:linear-gradient(160deg,#071426,#0c2340)}
+.contact .btn.primary{background:#c9a24a;border-color:#c9a24a;color:#071426}
+.project .visual,.visual{border-top-color:#c9a24a}
+</style>
+</head>
+<body>
+<header><nav class="wrap">
+  <a href="#top" class="logo">Varsha Shiva Kumar</a>
+  <div class="links"><a href="#work">Work</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div>
+</nav></header>
+
+<main id="top">
+  <section class="hero"><div class="wrap">
+    <p class="eyebrow">Financial Analyst · FP&amp;A · Treasury · Corporate Finance</p>
+    <h1>Hi, I'm Varsha.<br>I build the models behind <em>finance decisions</em>.</h1>
+    <p class="lead">Corporate Finance MBA candidate at Pace University in New York. I build driver-based budgets, rolling forecasts, 13-week cash flow models, Power BI dashboards and DCF valuations that turn numbers into clear calls.</p>
+    <div class="btns">
+      <a class="btn primary" href="#work">See my work</a>
+      <a class="btn" href="work/Varsha_Shiva_Kumar_Resume.pdf" download>Download résumé</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>3.67</b><span>MBA GPA, Pace University</span></div>
+      <div class="stat"><b>$52M</b><span>Simulated retailers modeled</span></div>
+      <div class="stat"><b>3</b><span>End-to-end finance models</span></div>
+      <div class="stat"><b>2×</b><span>Bloomberg certifications</span></div>
+    </div>
+  </div></section>
+
+  <section id="work"><div class="wrap">
+    <h2>Selected work</h2>
+    <p class="sub">Every model below is downloadable. Inputs, checks and assumptions are all inside, so you can open the file and trace any number.</p>
+
+    <article class="project">
+      <div class="visual">
+        <a href="assets/dash1.jpg" target="_blank" rel="noopener"><img src="assets/dash1.jpg" alt="Summit Trail Outfitters FP&amp;A Performance Dashboard in Power BI, showing revenue, EBITDA and margin KPIs with an EBITDA bridge and monthly revenue trend" loading="lazy"></a>
+        <div class="thumbs">
+          <a href="assets/dash2.jpg" target="_blank" rel="noopener"><img src="assets/dash2.jpg" alt="Budget vs Actual page" loading="lazy"></a>
+          <a href="assets/dash3.jpg" target="_blank" rel="noopener"><img src="assets/dash3.jpg" alt="Rolling forecast page" loading="lazy"></a>
+          <a href="assets/dash4.jpg" target="_blank" rel="noopener"><img src="assets/dash4.jpg" alt="Variance drivers page" loading="lazy"></a>
+        </div>
+      </div>
+      <div>
+        <p class="kicker">Excel · Power BI · DAX</p>
+        <h3>FP&amp;A Budget vs Actual &amp; Rolling Forecast</h3>
+        <p class="org">Summit Trail Outfitters, a simulated $52M outdoor retailer</p>
+        <ul>
+          <li>Built a driver-based budget and monthly budget-vs-actual model with 15 integrity checks.</li>
+          <li>Built a 12-month rolling forecast (Base, Upside, Downside) with price/volume and EBITDA bridges, isolating a <strong>$0.65M EBITDA shortfall</strong> YTD.</li>
+          <li>Traced the variance to drivers: Camping Gear volume +9.7% and Footwear −8.8% vs budget, with hiring 4 FTEs behind plan offsetting payroll.</li>
+          <li>Designed a 4-page Power BI dashboard (star schema, DAX) that refreshes directly from the Excel model.</li>
+        </ul>
+        <div class="tags"><span class="tag">Variance analysis</span><span class="tag">Rolling forecast</span><span class="tag">Scenario planning</span><span class="tag">Power BI</span></div>
+        <div class="plinks"><a href="work/FPA_Budget_vs_Actual_Rolling_Forecast.xlsx" download>Excel model ↓</a><a href="work/FPA_Power_BI_Dashboard.pdf" target="_blank" rel="noopener">Dashboard PDF ↗</a></div>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="visual"><div class="panel">
+        <div class="panel-head"><b>Liquidity dashboard · Hudson Lane Home Goods</b><span>13 weeks · Base case</span></div>
+        <div class="mgrid">
+          <div class="m"><b>$1.50M</b><span>Opening cash</span></div>
+          <div class="m"><b>Week 7</b><span>Lowest liquidity point</span></div>
+          <div class="m"><b class="neg">~$90K</b><span>Downside covenant breach</span></div>
+          <div class="m"><b class="pos">$250K</b><span>Capex deferred to resolve</span></div>
+        </div>
+        <div class="chart" aria-label="Illustrative weekly liquidity curve dipping to a low in week 7 then recovering">
+          <svg viewBox="0 0 320 110" role="img">
+            <title>Total liquidity by week, illustrative</title>
+            <line x1="0" y1="96" x2="320" y2="96" stroke="var(--border)"/>
+            <polyline fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linejoin="round" points="8,30 32,36 56,44 80,52 104,64 128,74 152,82 176,74 200,60 224,46 248,38 272,30 296,24"/>
+            <circle cx="152" cy="82" r="4.5" fill="var(--neg)"/>
+            <text x="152" y="104" text-anchor="middle" font-size="10" fill="var(--muted)" font-family="Inter,sans-serif">Wk 7 low</text>
+            <text x="8" y="14" font-size="10" fill="var(--muted)" font-family="Inter,sans-serif">Total liquidity (cash + revolver availability)</text>
+          </svg>
+        </div>
+      </div></div>
+      <div>
+        <p class="kicker">Excel · Treasury</p>
+        <h3>13-Week Cash Flow Forecast &amp; Liquidity Model</h3>
+        <p class="org">Hudson Lane Home Goods, a simulated $52M specialty retailer</p>
+        <ul>
+          <li>Built a direct-method 13-week cash flow model with AR collection curves, inventory lead times, vendor terms and an automated revolver draw and sweep.</li>
+          <li>Ran Base, Downside and Upside scenarios and pinpointed a Week 7 liquidity low ahead of peak holiday receipts.</li>
+          <li>Found a Downside covenant breach of up to ~$90K and resolved it by deferring $250K of capex.</li>
+          <li>Built a weekly forecast-vs-actual variance review, plus five live model integrity checks.</li>
+        </ul>
+        <div class="tags"><span class="tag">Cash forecasting</span><span class="tag">Liquidity</span><span class="tag">Revolver modeling</span><span class="tag">Covenants</span></div>
+        <div class="plinks"><a href="work/13-Week_Cash_Flow_Model.xlsx" download>Excel model ↓</a></div>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="visual"><div class="panel">
+        <div class="panel-head"><b>Apple Inc. (AAPL) · DCF valuation</b><span>5-year unlevered DCF</span></div>
+        <div class="mgrid">
+          <div class="m"><b>$196.42</b><span>Intrinsic value / share</span></div>
+          <div class="m"><b>$331.43</b><span>Market price at valuation</span></div>
+          <div class="m"><b>9.76%</b><span>WACC (CAPM)</span></div>
+          <div class="m"><b>~$2.82T</b><span>Enterprise value</span></div>
+        </div>
+        <div class="chart">
+          <svg viewBox="0 0 320 70" role="img">
+            <title>Perpetual FCF growth: 3.0% base case vs 6.97% implied by market price</title>
+            <text x="0" y="14" font-size="10" fill="var(--muted)" font-family="Inter,sans-serif">Perpetual FCF growth</text>
+            <text x="0" y="36" font-size="10" fill="var(--muted)" font-family="Inter,sans-serif">Base</text>
+            <rect x="64" y="27" width="99" height="12" rx="3" fill="var(--accent)"/>
+            <text x="169" y="37" font-size="10" fill="var(--text)" font-family="Inter,sans-serif" font-weight="600">3.0%</text>
+            <text x="0" y="58" font-size="10" fill="var(--muted)" font-family="Inter,sans-serif">Market</text>
+            <rect x="64" y="49" width="211" height="12" rx="3" fill="var(--neg)" opacity=".85"/>
+            <text x="281" y="59" font-size="10" fill="var(--text)" font-family="Inter,sans-serif" font-weight="600">6.97%</text>
+          </svg>
+        </div>
+      </div></div>
+      <div>
+        <p class="kicker">Excel · Valuation · Pace MBA</p>
+        <h3>Apple Inc. (AAPL): DCF Valuation &amp; Equity Research</h3>
+        <p class="org">Five-year unlevered DCF with segment-level forecasting</p>
+        <ul>
+          <li>Forecast segment revenue, gross margin, NOPAT and free cash flow over five years.</li>
+          <li>Calculated a 9.76% WACC via CAPM; 3.0% terminal growth and a 20x EV/EBITDA exit gave ~$2.82T EV and <strong>$196.42/share vs. $331.43</strong> market.</li>
+          <li>Ran sensitivity tables, bear/base/bull scenarios and a reverse DCF: today's price implies ~6.97% perpetual FCF growth vs. a 3.0% base.</li>
+        </ul>
+        <div class="tags"><span class="tag">DCF</span><span class="tag">WACC / CAPM</span><span class="tag">Reverse DCF</span><span class="tag">Sensitivity analysis</span></div>
+        <div class="plinks"><a href="work/Apple_DCF_Valuation.xlsx" download>Excel model ↓</a></div>
+      </div>
+    </article>
+
+    <div class="minis">
+      <div class="mini">
+        <p class="kicker">Brand strategy · Pace MBA</p>
+        <h3>Dexter.Co: Brand Strategy &amp; Business Development</h3>
+        <p>Took a pet-care brand from concept to launch: market research, positioning, business model, digital marketing and website.</p>
+      </div>
+      <div class="mini">
+        <p class="kicker">Research · BBA</p>
+        <h3>Cryptocurrency's Impact on Traditional Banking</h3>
+        <p>Surveyed 150+ respondents and analyzed how blockchain and digital assets affect traditional banking services.</p>
+      </div>
+    </div>
+  </div></section>
+
+  <section id="about"><div class="wrap">
+    <h2>About</h2>
+    <div class="about" style="margin-top:28px">
+      <div>
+        <p>I'm a Corporate Finance MBA candidate at Pace University in New York (GPA 3.67, expected January 2027). Before that, I earned a BBA in Finance with First Class Distinction from Mount Carmel College in Bangalore.</p>
+        <p>My focus is FP&amp;A, treasury and valuation: building models that show not just what the numbers are, but why they moved and what to do next. I work mostly in Excel and Power BI, and I'm Bloomberg-certified.</p>
+        <p>I speak English and Hindi fluently, Kannada natively, and some French.</p>
+      </div>
+      <div>
+        <div class="skillgroup"><h4>Financial analysis</h4><div class="tags"><span class="tag">Budgeting &amp; forecasting</span><span class="tag">Variance analysis</span><span class="tag">Financial statements</span><span class="tag">Cash flow</span><span class="tag">KPI tracking</span></div></div>
+        <div class="skillgroup"><h4>Valuation &amp; modeling</h4><div class="tags"><span class="tag">DCF</span><span class="tag">WACC / CAPM</span><span class="tag">EV/EBITDA multiples</span><span class="tag">Scenario analysis</span><span class="tag">Reverse DCF</span></div></div>
+        <div class="skillgroup"><h4>Tools</h4><div class="tags"><span class="tag">Excel</span><span class="tag">Power Query</span><span class="tag">Power BI (DAX)</span><span class="tag">Bloomberg Terminal</span><span class="tag">PowerPoint</span><span class="tag">Canva</span></div></div>
+        <div class="skillgroup"><h4>Business</h4><div class="tags"><span class="tag">Market research</span><span class="tag">Competitor analysis</span><span class="tag">Brand strategy</span><span class="tag">Event management</span></div></div>
+      </div>
+    </div>
+  </div></section>
+
+  <section id="experience"><div class="wrap">
+    <h2>Experience &amp; education</h2>
+    <div class="timeline" style="margin-top:32px">
+      <div class="job"><div class="when">Expected Jan 2027</div><div>
+        <h3>MBA, Corporate Finance</h3><p class="org">Pace University · New York, NY · GPA 3.67/4.00</p>
+      </div></div>
+      <div class="job"><div class="when">Feb 2023 – Apr 2023</div><div>
+        <h3>Finance &amp; Accounts Intern</h3><p class="org">Yusen Logistics Pvt. Ltd. · Bangalore, India</p>
+        <ul>
+          <li>Supported AP/AR processing, month-end close and financial reporting.</li>
+          <li>Helped streamline finance workflows on a process-improvement project, cutting turnaround time by about 30%.</li>
+          <li>Created PowerPoint decks and training videos documenting business processes across departments.</li>
+        </ul>
+      </div></div>
+      <div class="job"><div class="when">Apr 2024</div><div>
+        <h3>BBA, Finance · First Class with Distinction</h3><p class="org">Mount Carmel College Autonomous · Bangalore, India</p>
+        <ul><li>Coursework: Financial Statement Analysis, Financial Management, Investment Portfolio Management, International Finance &amp; Forex.</li></ul>
+      </div></div>
+      <div class="job"><div class="when">Jan 2021 – Sep 2021</div><div>
+        <h3>Campus Representative</h3><p class="org">Beat Battalion · Bangalore, India</p>
+        <ul>
+          <li>Led campus marketing and outreach for events, promoting initiatives to 100+ students.</li>
+          <li>Coordinated event logistics, timelines, stakeholders, and art and décor.</li>
+        </ul>
+      </div></div>
+    </div>
+    <div class="certs">
+      <div class="cert"><b>Bloomberg Market Concepts</b><span>Bloomberg</span></div>
+      <div class="cert"><b>Bloomberg Finance Fundamentals</b><span>Bloomberg</span></div>
+      <div class="cert"><b>Investment Banking Job Simulation</b><span>Bank of America · Forage</span></div>
+      <div class="cert"><b>Strategy Job Simulation</b><span>BCG · Forage</span></div>
+    </div>
+  </div></section>
+
+  <section id="contact" class="contact"><div class="wrap">
+    <h2>Let's talk</h2>
+    <p class="lead">I'm looking for roles in FP&amp;A, treasury and corporate finance. I'd love to hear from you.</p>
+    <div class="btns">
+      <a class="btn primary" href="mailto:varshashiv555@gmail.com">varshashiv555@gmail.com</a>
+      <a class="btn" href="https://linkedin.com/in/varsha-shiva" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a class="btn" href="work/Varsha_Shiva_Kumar_Resume.pdf" download>Résumé ↓</a>
+    </div>
+  </div></section>
+</main>
+<footer>© <span id="y">2026</span> Varsha Shiva Kumar · New York, NY</footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
